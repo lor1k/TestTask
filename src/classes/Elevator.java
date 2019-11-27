@@ -31,12 +31,10 @@ public class Elevator {
     }
 
     public boolean unloadNeeded() {
-        if(this.people.size() == 0)
-        return false;
+        if(this.people.size() == 0) return false;
         for (Person p :
                 this.people) {
-            if(p.getNeededFlour() == this.flour)
-                return true;
+            if(p.getNeededFlour() == this.flour) return true;
         }
         return false;
     }
